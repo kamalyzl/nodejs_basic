@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node -r esm server.js",
     "lint": "eslint ./",
-    "dev": "DEBUG=startup nodemon -r esm server.js",
+    "dev": "DEBUG=startup NODE_ENV=local nodemon -r esm server.js",
     "test": "NODE_ENV=test jest"
   },
   "dependencies": {
